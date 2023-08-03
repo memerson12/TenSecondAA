@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "tsaa",
+	"version": "${version}",
+	"name": "TenSecondAA",
+	"description": "A mod to run the 10 second creative mode aa category (it exists :))",
+	"authors": [
+		"memerson"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tenSecondAA/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.memerson.tenSecondAA.TenSecondAA"
+		]
+	},
+	"mixins": [
+		"tenSecondAA.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.16.1",
+		"java": ">=16"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "com.memerson.tenSecondAA.mixin",
+	"compatibilityLevel": "JAVA_8",
+	"mixins": [
+		"onJoinMixin",
+		"onTickMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
