@@ -14,12 +14,9 @@ import java.util.function.BooleanSupplier;
 
 @Mixin(ServerWorld.class)
 public  class onTickMixin {
-    @Unique
-    private static final TenSecondAA tsaa = new TenSecondAA();
-
     @Inject(at = @At("TAIL"), method = "tick")
     private void onTick(BooleanSupplier shouldKeepTicking, CallbackInfo ci) {
-        tsaa.onTick();
+        TenSecondAA.onTick();
     }
 
 }

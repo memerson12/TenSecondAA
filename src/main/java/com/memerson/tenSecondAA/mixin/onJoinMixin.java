@@ -20,12 +20,9 @@ import java.util.function.BooleanSupplier;
 
 @Mixin(PlayerManager.class)
 public class onJoinMixin {
-    @Unique
-    private static final TenSecondAA tsaa = new TenSecondAA();
-
     @Inject(at = @At("TAIL"), method = "onPlayerConnect")
     private void onJoin(ClientConnection connection, ServerPlayerEntity player, CallbackInfo ci) {
-        tsaa.onJoin(player);
+        TenSecondAA.onJoin(player)
     }
 
 }
